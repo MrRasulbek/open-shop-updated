@@ -1,0 +1,495 @@
+@media (prefers-color-scheme:dark) {
+               :root {
+                              --mono: "NotoSansDisplay";
+                              --body: #313131;
+                              --text: #fff;
+               }
+
+               .second-section-navbar-brand::after {
+                              content: url(../images/second-section_2.png);
+                              display: block;
+               }
+
+               .second-section_form {
+                              border: 1px solid white;
+                              padding: 0px;
+                              height: 50px;
+               }
+
+               .second-section-form-control {
+                              background-color: var(--body) !important;
+                              color: white !important;
+               }
+
+               .second-section-form-control::placeholder {
+                              color: white;
+               }
+
+               .second-section-btn-outline-success {
+                              border-left: 1px solid white !important;
+
+               }
+
+               .forth-section_carousel_inner {
+                              background: radial-gradient(41.86% 41.86% at 50% 50%, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 100%);
+               }
+
+               .forth-section_link,
+               .fifth-section_link {
+                              border: 1px solid white;
+               }
+
+               .forth-section_link:hover,
+               .forth-section_link:focus,
+               .fifth-section_link:hover,
+               .fifth-section_link:focus {
+                              color: #313131;
+                              background-color: white;
+                              border: 1px solid white;
+               }
+
+               .fifth-section_box-inside {
+                              background-color: rgba(255, 255, 255, 0.924);
+               }
+
+               .sixth-section_inside-link {
+                              border: 1px solid white;
+               }
+
+               .sixth-section_inside-link:hover,
+               .sixth-section_inside-link:focus {
+                              color: var(--text);
+                              background-color: white;
+                              color: var(--body);
+               }
+
+               .sixth-section_column {
+                              background: radial-gradient(39.9% 39.9% at 50% 38.67%, rgba(255, 255, 255, 0.15) 30%, rgba(255, 255, 255, 0) 100%)
+               }
+               .eight-section_col:after{
+                              content: url(../images/eight-section_2.png);
+                              left: 0;
+                              top: 0;
+                              display: block;
+               }
+               
+}
+
+@media (max-width:1200px) {
+               .second-section_text_inside {
+                              display: none;
+               }
+
+               .second-section-btn-outline-success {
+                              width: 30% !important;
+               }
+
+               .second-section-form-control {
+                              width: 70% !important;
+               }
+
+               .third-section_drop_down::before {
+                              top: 35px;
+               }
+
+               .third-section_nav-link {
+                              padding: 5px 0px !important;
+               }
+
+               .text-font-7 {
+                              font-size: 35px;
+                              line-height: 50px;
+               }
+
+               .forth-section_link,
+               .fifth-section_link {
+                              width: 120px;
+                              height: 40px;
+                              margin-top: 80px;
+               }
+
+               .fifth-section_link {
+                              margin-top: 0px;
+               }
+
+               .text-font-3 {
+                              font-size: 16px;
+               }
+
+               .forth-section_button {
+                              margin: 0px 10px !important;
+               }
+
+               .fifth-section_price-1::before,
+               .fifth-section_price-2::before,
+               .fifth-section_price-3::before,
+               .fifth-section_price-4::before {
+                              width: 60px;
+                              height: 60px;
+                              font-size: 18px;
+                              top: 10px;
+                              left: 15px;
+               }
+
+               .fifth-section_price-3::before {
+                              top: unset;
+                              bottom: 10px;
+               }
+
+               .fifth-section_price-4::before {
+                              top: unset;
+                              bottom: 10px;
+               }
+
+               /* text-font-5 begins from here please take note of that */
+               .text-font-5 {
+                              font-size: 20px;
+               }
+
+               /* text-font-5 ends from here please take note of that */
+
+               /* text-font-6 begins from here please take note of that */
+               .text-font-6 {
+                              font-size: 32px;
+                              line-height: 45px;
+               }
+
+               /* text-font-6 ends from here please take note of that */
+
+               .fifth-section_information-2 {
+                              bottom: unset;
+                              top: 10px;
+               }
+
+               .sixth-section_img {
+                              width: 75%;
+                              display: block;
+                              margin: auto;
+               }
+               .footer_row{
+                              row-gap: 35px;
+               }
+               .footer_list{
+                              transform: translateX(0px);
+               }
+}
+
+@media (max-width:992px) {
+               .text-font-7 {
+                              font-size: 30px;
+                              line-height: 45px;
+               }
+
+               .forth-section_link,
+               .fifth-section_link {
+                              width: 120px;
+                              margin-top: 50px;
+               }
+
+               .fifth-section_link {
+                              margin-top: 0px;
+               }
+
+               .text-font-3 {
+                              font-size: 16px;
+               }
+
+               .forth-section_button {
+                              margin: 0px 8px !important;
+               }
+
+               .fifth-section_price-1::before,
+               .fifth-section_price-2::before,
+               .fifth-section_price-3::before,
+               .fifth-section_price-4::before {
+                              width: 45px;
+                              height: 45px;
+                              font-size: 16px;
+                              top: 5px;
+                              left: 10px;
+               }
+
+               .fifth-section_price-3::before {
+                              top: unset;
+                              bottom: 5px;
+               }
+
+               .fifth-section_price-4::before {
+                              top: unset;
+                              bottom: 5px;
+               }
+
+               /* text-font-5 begins from here please take note of that */
+               .text-font-5 {
+                              font-size: 18px;
+                              line-height: 20px;
+               }
+
+               /* text-font-5 ends from here please take note of that */
+
+               /* text-font-6 begins from here please take note of that */
+               .text-font-6 {
+                              font-size: 28px;
+                              line-height: 40px;
+               }
+
+               /* text-font-6 ends from here please take note of that */
+               .fifth-section_information_box_title {
+                              margin-bottom: 0px;
+               }
+
+               .fifth-section_information-2 {
+                              left: 5px !important;
+                              top: 5px;
+               }
+
+               .fifth-section_information {
+                              bottom: 5px;
+                              left: 5px;
+               }
+
+               .sixth-section_inside_box {
+                              bottom: 20px;
+               }
+               .eight-section_inside_box{
+                              display: flex;
+                              flex-direction: column;
+                              align-items: center;
+               }
+               .eight-section_img{
+                              width: 75%;
+                              display: block;
+                              margin: 0px auto;
+               }
+}
+
+@media (max-width:767px) {
+               .forth-section-carousel-indicators {
+                              text-align: center;
+                              transform: translateX(0px);
+               }
+
+               .forth-section_col_inside {
+                              width: 70%;
+                              margin: auto;
+               }
+
+               /* text-font-6 begins from here please take note of that */
+               .text-font-6 {
+                              font-size: 26px;
+                              line-height: 35px;
+               }
+
+               /* text-font-6 ends from here please take note of that */
+               .sixth-section_img {
+                              width: 60%;
+               }
+}
+
+@media (max-width:576px) {
+               .first-section-navbar-nav {
+                              margin: auto;
+                              max-width: 576px;
+               }
+
+               .first-section_nav-item:nth-of-type(2) .first-section_nav-link {
+                              max-width: 130px;
+                              width: 100%;
+                              margin-left: auto;
+               }
+
+               .first-section_nav-item:nth-of-type(4) .first-section_nav-link {
+                              max-width: 130px;
+                              width: 100%;
+                              margin-left: auto;
+               }
+
+               .first-section_nav-item:nth-of-type(3) .first-section_nav-link {
+                              text-align: start;
+               }
+
+               .first-section-navbar-nav {
+                              row-gap: 5px;
+               }
+
+               .text-font-7 {
+                              font-size: 22px;
+                              line-height: 35px;
+               }
+
+               .forth-section_link,
+               .fifth-section_link {
+                              width: 130px;
+                              margin-top: 40px;
+               }
+
+               .fifth-section_link {
+                              margin-top: 0px;
+               }
+
+               .text-font-3 {
+                              font-size: 15px;
+               }
+
+               /* text-font-1 begins from here please take note of that */
+               .text-font-5 {
+                              font-size: 16px;
+               }
+
+               /* text-font-1 ends from here please take note of that */
+
+               /* section padding begins from here please take note of that */
+               .section-padding-design {
+                              padding: 50px 0px;
+               }
+
+               /* section padding ends from here please take note of that */
+
+               /* text-font-6 begins from here please take note of that */
+               .text-font-6 {
+                              font-size: 24px;
+                              line-height: 30px;
+               }
+
+               /* text-font-6 ends from here please take note of that */
+               /* text-font-2 begins from here please take note of that */
+               .text-font-2 {
+                              font-size: 15px;
+                              width: 200px;
+               }
+
+               /* text-font-2 ends from here please take note of that */
+
+               .sixth-section_inside_box {
+                              bottom: 0px;
+               }
+
+               .sixth-section_row {
+                              row-gap: 10px;
+               }
+
+               .sixth-section_title-inside {
+                              margin-bottom: 0px;
+               }
+               .sixth-section_column {
+                              background: radial-gradient(32.9% 19.9% at 50% 55.67%, rgba(255, 255, 255, 0.15) 30%, rgba(255, 255, 255, 0) 100%)
+               }
+               .footer_icon{
+                              font-size: 30px;
+                              margin: 0px 15px;
+               }
+               .footer_form{
+                              height: 40px;
+               }
+               .footer_list{
+                              gap: 15px;
+               }
+}
+
+@media (max-width:340px) {
+               .second-section_text {
+                              display: none;
+               }
+
+               .second-section-form-control {
+                              padding: 10px;
+                              width: 80% !important;
+               }
+
+               .second-section-btn-outline-success {
+                              padding: 10px 5px;
+                              width: 20% !important;
+               }
+
+               .second-section-form-control::placeholder {
+                              color: white;
+               }
+
+               .third-section_drop_down {
+                              width: 250px !important;
+                              padding: 15px 10px;
+               }
+
+               .third-section_drop_down::before {
+                              content: "";
+                              position: absolute;
+                              width: 220px;
+                              height: 2px;
+                              background-color: var(--text);
+                              top: 35px;
+                              left: 15px;
+               }
+
+               .text-font-3 {
+                              font-size: 14px;
+               }
+
+               .text-font-7 {
+                              font-size: 16px;
+                              line-height: 20px;
+               }
+
+               .forth-section_link,
+               .fifth-section_link {
+                              width: 100px;
+                              height: 30px;
+                              margin-top: 40px;
+               }
+
+               .fifth-section_link {
+                              margin-top: 0px;
+               }
+
+               .fifth-section_price-1::before,
+               .fifth-section_price-2::before,
+               .fifth-section_price-3::before,
+               .fifth-section_price-4::before {
+                              width: 35px;
+                              height: 35px;
+                              font-size: 12px;
+                              top: 5px;
+                              left: 5px;
+               }
+
+               .fifth-section_price-3::before {
+                              top: unset;
+                              bottom: 5px;
+               }
+
+               .fifth-section_price-4::before {
+                              top: unset;
+                              bottom: 5px;
+               }
+
+               /* text-font-5 begins from here please take note of that */
+               .text-font-5 {
+                              font-size: 14px;
+               }
+
+               /* text-font-5 ends from here please take note of that */
+
+               /* text-font-6 begins from here please take note of that */
+               .text-font-6 {
+                              font-size: 18px;
+                              line-height: 25px;
+                              margin-bottom: 0px;
+               }
+
+               /* text-font-6 ends from here please take note of that */
+               .sixth-section_column {
+                              height: 210px;
+               }
+               .footer{
+                              padding-bottom: 20px;
+               }
+}
+
+@media (max-width:300px) {
+
+               /* text-font-1 begins from here please take note of that */
+               .text-font-1 {
+                              font-size: 13px;
+               }
+
+               /* text-font-1 ends from here please take note of that */
+}

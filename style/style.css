@@ -1,0 +1,715 @@
+@import "./fonts.css";
+
+:root {
+               --mono: "NotoSansDisplay";
+               --body: #fff;
+               --text: #313131;
+}
+
+body {
+               background-color: var(--body);
+               position: relative;
+}
+
+/* loader begins from here please take note of that */
+.loader{
+               position: fixed;
+               width: 100%;
+               height: 100%;
+               background-color: #313131;
+               z-index: 10000;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               animation-name: loading;
+               animation-fill-mode: forwards;
+               animation-iteration-count: 1;
+               animation-direction: normal;
+               animation-play-state: running;
+               animation-timing-function: linear;
+               animation-duration: 4s;
+}
+@keyframes loading {
+               95%{
+                              opacity: 1;
+               }
+               100%{
+                              opacity: 0;
+                              visibility: hidden;
+               }
+}
+.loader_img{
+               animation-name: loader;
+               animation-fill-mode: forwards;
+               animation-iteration-count: infinite;
+               animation-direction: normal;
+               animation-play-state: running;
+               animation-timing-function: linear;
+               animation-duration: 2s;
+}
+@keyframes loader {
+               to{
+                              transform: rotateX(-360deg);
+               }
+}
+/* loader ends from here please take note of that */
+
+
+a {
+               text-decoration: none;
+}
+
+ul {
+               list-style: none;
+               padding: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+               margin: 0;
+}
+
+/* content begins from here please take note of that */
+/* content ends from here please take note of that */
+
+/* text-font-1 begins from here please take note of that */
+.text-font-1 {
+               font-family: var(--mono);
+               font-weight: 400;
+               font-size: 14px;
+               line-height: 19px;
+               letter-spacing: 0.05em;
+}
+
+/* text-font-1 ends from here please take note of that */
+
+/* text-font-2 begins from here please take note of that */
+.text-font-2 {
+               font-family: var(--mono);
+               font-weight: 400;
+               font-size: 16px;
+               line-height: 19px;
+               letter-spacing: 0.05em;
+               color: var(--text);
+}
+
+/* text-font-2 ends from here please take note of that */
+
+/* text-font-3 begins from here please take note of that */
+.text-font-3 {
+               font-family: var(--mono);
+               font-weight: 400;
+               font-size: 18px;
+               line-height: 25px;
+}
+
+/* text-font-3 ends from here please take note of that */
+/* text-font-5 begins from here please take note of that */
+.text-font-5 {
+               font-family: var(--mono);
+               font-weight: 500;
+               font-size: 24px;
+               line-height: 25px;
+               letter-spacing: 0.05em;
+}
+
+/* text-font-5 ends from here please take note of that */
+
+/* text-font-6 begins from here please take note of that */
+.text-font-6 {
+               font-family: var(--mono);
+               font-weight: 600;
+               font-size: 36px;
+               line-height: 49px;
+               letter-spacing: 0.05em;
+               color: var(--text);
+}
+
+/* text-font-6 ends from here please take note of that */
+
+/* text-font-7 begins from here please take note of that */
+.text-font-7 {
+               font-family: var(--mono);
+               font-weight: 600;
+               font-size: 48px;
+               line-height: 70px;
+               letter-spacing: 0.05em;
+               color: var(--text);
+}
+
+/* text-font-7 ends from here please take note of that */
+
+/* header begins from here please take note of that */
+
+/* first section begins from here please take note of that */
+.first-section {
+               background-color: #0C0C0C;
+               padding: 15px 0px;
+}
+
+.first-section-navbar {
+               padding: 0px !important;
+}
+
+.first-section-navbar-nav {
+               margin-left: auto;
+               max-width: 500px;
+               width: 100%;
+}
+
+.first-section-form-select {
+               display: block;
+               width: 100%;
+               padding: unset;
+               color: #212529;
+               background-color: unset;
+               background-image: url(../images/first-section-icon.png);
+               background-repeat: no-repeat;
+               background-position: left 65px center;
+               background-size: 14px 8px;
+               border: unset;
+               border-radius: unset;
+               color: white;
+               box-shadow: unset !important;
+}
+
+.first-section_nav-link {
+               padding: 0 !important;
+}
+
+.first-section_nav-item:nth-of-type(2) .first-section_nav-link {
+               text-align: end;
+}
+
+.first-section_nav-item:nth-of-type(3) .first-section_nav-link {
+               text-align: center;
+}
+
+.first-section_nav-link-design:hover,
+.first-section_nav-link-design:focus {
+               color: rgb(130, 130, 238);
+}
+
+.first-section_nav-link-design {
+               color: white !important;
+               transition: 1s;
+}
+
+.first-section-option {
+               color: #313131;
+               transition: 1s;
+}
+
+.first-section_icon {
+               margin-right: 8px;
+               font-size: 15px;
+}
+
+/* first section ends from here please take note of that */
+/* second section begins from here please take note of that */
+.second-section-navbar-brand::after {
+               content: url(../images/second-section_1.png);
+               display: block;
+               animation-name: first-section_logo;
+               animation-timing-function: linear;
+               animation-duration: 5s;
+               animation-fill-mode: forwards;
+               animation-iteration-count: infinite;
+               animation-direction: normal;
+               animation-play-state: running;
+}
+
+@keyframes first-section_logo {
+               50% {
+                              opacity: 0;
+               }
+
+               70% {
+                              opacity: 0;
+               }
+
+               100% {
+                              transform: rotateX(-360deg);
+                              opacity: 1;
+               }
+}
+
+.second-section-navbar-brand {
+               margin: 0 !important;
+               padding-top: 0px !important;
+               padding-bottom: 0px !important;
+               overflow: hidden;
+}
+
+.second-section {
+               padding: 18px 0px;
+}
+
+.second-section_form {
+               border: 1px solid #313131;
+               padding: 0px;
+               height: 50px;
+}
+
+.second-section-form-control {
+               padding: 15px 10px;
+               border: unset;
+               height: 100%;
+               box-shadow: unset !important;
+               width: 65%;
+               background-color: var(--body);
+}
+
+.second-section-btn-outline-success {
+               height: 100%;
+               background-color: #313131;
+               color: white;
+               border: unset;
+               border-radius: unset;
+               padding: 15px 5px;
+               width: 35%;
+               box-shadow: unset !important;
+               margin-left: auto;
+}
+
+.second-section-btn-outline-success:hover,
+.second-section-btn-outline-success:focus {
+               background-color: #313131;
+}
+
+.second-section_icon {
+               font-size: 15px;
+               margin-right: 5px;
+}
+
+/* second section ends from here please take note of that */
+
+/* third section begins from here please take note of that */
+.third-section_nav-link {
+               color: var(--text);
+               padding: 0px 10px !important;
+               position: relative;
+}
+
+.third-section_nav-link:hover,
+.third-section_nav-link:focus {
+               color: var(--text) !important;
+}
+
+.third-section_drop_down {
+               width: 300px !important;
+               min-width: unset;
+               box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3) !important;
+               border-radius: unset;
+               padding: 15px 20px;
+               left: -20px !important;
+               margin-top: 0px !important;
+               top: 25px !important;
+               background-color: var(--body);
+}
+
+.third-section_drop_down::before {
+               content: "";
+               position: absolute;
+               width: 270px;
+               height: 2px;
+               background-color: var(--text);
+               top: 0;
+               left: 15px;
+}
+
+.third-section-dropdown-item {
+               padding: 2px 0px;
+               color: var(--text);
+}
+
+.third-section_mune_title {
+               text-decoration: underline;
+}
+
+.third-section-menu_icon {
+               width: 30px;
+               height: 2px;
+               position: relative;
+               display: flex;
+               justify-content: center;
+               transition: 1s;
+}
+
+.third-section-menu_icon::before,
+.third-section-menu_icon::after {
+               content: "";
+               position: absolute;
+               width: 100%;
+               height: 100%;
+               background-color: var(--text);
+               top: -7px;
+               transition: 1s;
+}
+
+.navbar-toggler.collapsed .third-section-menu_icon {
+               background-color: var(--text);
+}
+
+.navbar-toggler:not(.collapsed) .third-section-menu_icon::before {
+               transform: rotate(45deg);
+               top: 0px;
+}
+
+.navbar-toggler:not(.collapsed) .third-section-menu_icon::after {
+               transform: rotate(-45deg);
+               top: 0px;
+}
+
+.third-section-menu_icon::after {
+               top: 7px;
+}
+
+.third-section_navbar-toggler {
+               height: 30px;
+               display: flex;
+               align-items: center;
+               padding: 0px !important;
+}
+
+.third-section_navbar-toggler:focus {
+               box-shadow: unset;
+}
+
+.third-section_mune_title {
+               color: var(--text);
+}
+
+/* third section ends from here please take note of that */
+
+/* forth section begins from here please take note of that */
+.forth-section-carousel-indicators {
+               position: static;
+               margin: 0px;
+               display: block;
+               text-align: end;
+               transform: translateX(70px);
+}
+
+.forth-section_button {
+               width: 10px !important;
+               height: 10px !important;
+               border-radius: 50% !important;
+               background-color: #ABABAB !important;
+               margin: 0px 12.5px !important;
+}
+
+.forth-section_button.active {
+               background-color: var(--text) !important;
+               transform: scale(1.3);
+}
+
+.forth-section {
+               padding: 50px 0px 70px 0px;
+}
+
+.forth-section_col_inside {
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               height: 100%;
+               flex-direction: column;
+}
+
+.forth-section_title {
+               text-align: center;
+}
+
+.all-btn {
+               background-color: #313131;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+}
+
+.forth-section_link,
+.fifth-section_link {
+               width: 190px;
+               height: 50px;
+               color: white;
+               transition: 1s;
+               margin-top: 120px;
+}
+
+.forth-section_link:hover,
+.forth-section_link:focus,
+.fifth-section_link:hover,
+.fifth-section_link:focus {
+               color: var(--text);
+               background-color: var(--body);
+               border: 1px solid #313131;
+}
+
+/* forth section ends from here please take note of that */
+
+/* fifth section begins from here please take note of that */
+.fifth-section {
+               padding-bottom: 30px;
+}
+
+.fifth-section_box-inside {
+               background-color: rgba(214, 214, 214, 0.287);
+               height: 100%;
+}
+
+.fifth-section_col-6_row {
+               height: 53%;
+}
+
+.fifth-section_box_3-4 {
+               display: flex;
+               overflow: hidden;
+}
+
+.fifth-section_img-3-4 {
+               transform: translateY(5px);
+}
+
+.fifth-section_img {
+               transition: 1s;
+}
+
+.fifth-section_img:hover {
+               transform: scale(1.1);
+}
+
+.fifth-section_price-1,
+.fifth-section_price-2,
+.fifth-section_price-3,
+.fifth-section_price-4 {
+               position: relative;
+               z-index: 0;
+}
+
+.fifth-section_price-1::before,
+.fifth-section_price-2::before,
+.fifth-section_price-3::before,
+.fifth-section_price-4::before {
+               content: "-57%";
+               position: absolute;
+               color: white;
+               width: 70px;
+               height: 70px;
+               border-radius: 50%;
+               background-color: #313131;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               font-family: var(--mono);
+               font-weight: normal;
+               font-size: 20px;
+               top: 15px;
+               left: 20px;
+               z-index: 10;
+}
+
+.fifth-section_price-2::before {
+               content: "-30%";
+}
+
+.fifth-section_price-3::before {
+               content: "-20%";
+               top: unset;
+               bottom: 15px;
+}
+
+.fifth-section_price-4::before {
+               content: "-10%";
+               top: unset;
+               bottom: 15px;
+}
+
+.fifth-section_information_box_title {
+               color: #313131;
+               margin-bottom: 5px;
+}
+
+.fifth-section_information_box_text {
+               font-weight: 300;
+}
+
+.fifth-section_information,
+.fifth-section_information-2 {
+               position: absolute;
+               bottom: 15px;
+               left: 20px;
+}
+
+.fifth-section_information-2 {
+               bottom: unset;
+               top: 15px;
+}
+
+.fifth-section_link {
+               margin: 0px auto;
+}
+
+.fifth-section_row {
+               padding-bottom: 40px;
+}
+
+/* fifth section ends from here please take note of that */
+/* header ends from here please take note of that */
+
+/* main begins from here please take note of that */
+.sixth-section {
+               padding-bottom: 70px;
+}
+
+.sixth-section_title {
+               margin-bottom: 30px;
+}
+
+.sixth-section_img {
+               width: 100%;
+}
+
+.sixth-section_column {
+               position: relative;
+               display: flex;
+               justify-content: center;
+}
+
+.sixth-section_inside_box {
+               position: absolute;
+               bottom: 28px;
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+}
+
+.sixth-section_title-inside {
+               text-align: center;
+               margin-bottom: 5px;
+}
+
+.sixth-section_text {
+               color: var(--text);
+}
+
+.sixth-section_column:hover .sixth-section_inside-link {
+               visibility: visible;
+}
+
+.sixth-section_inside-link {
+               color: white;
+               width: 100px;
+               height: 25px;
+               margin-top: 5px;
+               transition: 0.5s;
+               position: absolute;
+               bottom: -30px;
+               visibility: hidden;
+               z-index: 10px;
+}
+
+.sixth-section_inside-link:hover,
+.sixth-section_inside-link:focus {
+               color: var(--text);
+               border: 1px solid #313131;
+               background-color: white;
+}
+.sixth-section_row{
+               margin-bottom: 40px;
+}
+
+/* eight section begins from here please take note of that */
+.eight-section_col{
+               position: relative;
+}
+.eight-section_col:after{
+               content: url(../images/eight-section_3.png);
+               left: 0;
+               top: 0;
+               display: block;
+}
+.eight-section_title{
+               margin-top: 20px;
+}
+.eight-section_link{
+               margin: 0px;
+               margin-top: 70px;
+}
+.eight-section_img{
+               width: 100%;
+}
+
+/* eight section ends from here please take note of that */
+/* main ends from here please take note of that */
+
+/* footer begins from here please take note of that */
+.footer{
+               background-color:  #0C0C0C;
+               padding-top: 30px;
+               padding-bottom: 45px;
+}
+.footer-col{
+               position: relative;
+}
+.footer-col::before{
+               content: url(../images/second-section_2.png);
+}
+.footer_form{
+               height: 50px;
+}
+.footer_input{
+               height: 100%;
+               border: unset;
+               border-radius: unset;
+}
+.footer_input:hover,.footer_input:focus{
+               box-shadow: unset;
+}
+.footer_button{
+               height: 100%;
+               border: 1px solid white;
+               border-radius: unset;
+               width: 50%;
+               color: white;
+}
+.footer_button:hover{
+               background-color: unset;
+               border: 1px solid white;
+               color: blue;
+}
+.footer_form{
+               position: relative;
+}
+.footer_form::before{
+               content: "Subscribe to Newslatter";
+               position: absolute;
+               top: -25px;
+               color: white;
+               left: 0;
+}
+.footer_icon{
+               font-size: 40px;
+               color: white;
+               margin: 0px 20px;
+               transition: 1s;
+}
+.footer_icon:hover{
+               color: blue;
+}
+.footer_list{
+               display: flex;
+               width: 100%;
+               margin-top: 30px;
+               gap: 30px;
+               justify-content: center;
+               transform: translateX(-170px);
+}
+.footer_list_link{
+               color: white;
+}
+/* footer ends from here please take note of that */
